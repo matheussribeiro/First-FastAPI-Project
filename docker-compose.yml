@@ -1,0 +1,9 @@
+version: '3'
+services:
+    api:
+        container_name: "api_test"
+        build: .
+        volumes:
+            - .:/code
+        ports:
+            - "5000:5000"
